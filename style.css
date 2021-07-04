@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+}
+nav img{
+    width: 200px;
+    margin-bottom: 50px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.li-button{
+    padding: 30px;
+}
+a{
+    padding: 15px;
+    background-color: rgb(22, 22, 133);
+    color: grey;
+    text-decoration: none;
+    border-radius: 50px;
+}
+a:hover{
+    background-color: black;
+    color: navy;
+}
+section{
+    text-align: center;
+}
+h1{
+    font-size: 100px;
+}
+p{
+    font-size: 30px;
+}
+button{
+    background-color: navy;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: grey;
+}
