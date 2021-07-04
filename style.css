@@ -8,7 +8,6 @@ nav{
 }
 nav img{
     width: 200px;
-    margin-bottom: 50px;
 }
 ul{
     list-style: none;
@@ -29,18 +28,32 @@ a:hover{
     background-color: black;
     color: navy;
 }
-section{
+main{
     text-align: center;
 }
 h1{
+    background-color: black;
+    color: coral;
     font-size: 100px;
+}
+h2{
+    background-color: coral;
+    color: black;
 }
 p{
     font-size: 30px;
+    color: red;
+    font-weight: bold;
 }
 button{
     background-color: navy;
     padding: 20px 40px;
     border-radius: 50px;
     color: grey;
+}
+footer{
+    margin-top: 50px;
+    width: 100%;
+    background-color: grey;
+    text-align: center;
 }
