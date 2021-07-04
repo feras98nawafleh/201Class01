@@ -5,7 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+}
+nav img{
+    width: 200px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.li-button{
+    padding: 30px;
+}
+a{
+    padding: 15px;
+    background-color: rgb(22, 22, 133);
+    color: grey;
+    text-decoration: none;
+    border-radius: 50px;
+}
+a:hover{
+    background-color: black;
+    color: navy;
+}
+main{
+    text-align: center;
+}
+h1{
+    font-family: monospace;
+    background-color: black;
+    color: coral;
+    font-size: 100px;
+}
+h2{
+    background-color: coral;
+    color: black;
+}
+p{
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+button{
+    background-color: navy;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: grey;
+}
+footer{
+    margin-top: 50px;
+    width: 100%;
+    background-color: grey;
+    text-align: center;
+}
+    </style>
     <script src="app.js"></script>
     <title>practising FrontEnd</title>
 </head>
@@ -23,12 +84,33 @@
     </header>
     <main>
         <h1>Class 1 Lab</h1>
-        <h2>Hello and Welcome!</h2>
-        <p>we are about to ask you some questions to get to know each other better <br>Ready?</p>
+        <h2>we are about to ask you some questions to get to know each other better, 
+            it's written below, read them and click the button when you're ready to answer <br>Ready?</h2>
+            <p style="background-color: brown; color: burlywood;" >what's your full name?</p>
+            <p style="background-color: chocolate; color: black;">what's you age please</p>
+            <p style="background-color:black; color: crimson;">what's your university major?</p>
+            <p style="    background-color: darkgreen; color: red;">where did you study?</p>
         <button onclick="startInterview()">i'm ready</button>
     </main>
 
     <footer>&#169 feras nawafleh</footer>
+    <script>
+        const startInterview = () => {
+    let fullName = prompt("enter your full name?");
+    console.log(fullName);
+
+    let age = prompt("enter you age please");
+    console.log(age);
+
+    let major = prompt("enter your university major?");
+    console.log(major);
+
+    let university = prompt("enter your university's name?");
+    console.log(university);
+
+    alert(`Hello ${fullName} nice to meet you, you're still young with ${age} years old, also, ${major} is one of the best majors these days and ${university} is one of the best in the region`);
+}
+    </script>
 </body>
 
 </html>
